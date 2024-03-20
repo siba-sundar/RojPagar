@@ -1,0 +1,124 @@
+.jobCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    height: 296px;
+    width: 22vw;
+    background-color: #F4EFDD;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+    margin: 1vw;
+}
+
+.jobCard .jobContent{
+    height: 87%;
+    width: 85%;
+}
+
+.jobContent h1{
+    font-size: 2vw;
+}
+
+.jobContent p{
+    margin-top: 17px;
+    font-size: 1vw;
+}
+
+
+.jobDetails{
+    display: flex;
+    gap:0.5vw;
+    padding-top: 12px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 20px;
+    width: 8vw;
+}
+
+
+.container img{
+    width: 1.2vw;
+    height: 1.6vw;
+}
+
+
+.container p{
+    display: flex;
+    font-size: 60%;
+    margin-top: 10px;
+    margin-left:0.3vw ;
+}
+
+
+.squareCardButton{
+    background-color:#F4EFDD;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 0.5vw 1.5vw;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+
+ .squareCardButton {
+    height: 34px;
+    width: 10vw;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    background-color:#F4EFDD;
+    border: 1px solid black;
+    border-radius: 34px;
+    font-weight: 800;
+    font-size: 1vw;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+ .squareCardButton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #040404;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+.squareCardButton:hover:before {
+    scale: 3;
+}
+  
+.squareCardButton:hover {
+    color: #ffffff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+  
+.loginButton:active {
+    scale: 1;
+} 
+
+
+
+.jobCard:hover{
+     box-shadow: 7px 7px rgba(0,0,0,0.5); 
+}

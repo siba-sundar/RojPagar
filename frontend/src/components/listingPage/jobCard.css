@@ -1,0 +1,91 @@
+.jobCard{
+    border: 1px solid black;
+    width: 60vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.recruiterInfo {
+    display: flex;
+}
+
+.recruiterInfo img{
+    padding: 10px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:-10px;
+}
+
+.recruiterInfo .details h3{
+    font-size: 1.5vw;
+}
+
+.recruiterInfo .details p{
+    margin-top: -13px;
+    font-size: 1vw;
+}
+
+.jobDetails{
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.jobDetails h2{
+    font-size:1.7vw;
+}
+
+.jobDetails p{
+    font-size:0.9vw;
+    margin-top: -10px;
+}
+
+.info{
+    display: flex;
+    gap:2vw;
+}
+
+.infoCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 20px;
+    width: 8vw;
+}
+
+
+.infoCard img{
+    width: 1.6vw;
+    height: 1.6vw;
+}
+
+
+.infoCard p{
+    display: flex;
+    font-size: 70%;
+    margin-top: 10px;
+    margin-left:0.3vw ;
+}
+
+
+.info button{
+    margin-left: 15vw;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5vw 1.5vw;
+    border-radius: 20px;
+    margin-top: -15px;
+}
+
+
+.jobCard:hover{
+     box-shadow: 7px 7px rgba(0,0,0,0.5); 
+}
