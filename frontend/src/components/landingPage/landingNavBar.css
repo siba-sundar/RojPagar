@@ -70,6 +70,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.loginButton link{
+    text-decoration: none;
+}
   
  .loginButton::before {
     content: '';

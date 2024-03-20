@@ -19,7 +19,7 @@ function LandingBar (){
 
             <div className="navButton">
                 <button className="loginButton" >
-                    <Link to="/login">Login
+                    <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>Login
                     </Link>
                    
                 </button>

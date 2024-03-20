@@ -46,12 +46,13 @@ body{
 
 .contactPhone{
     display: flex;
-    margin-top: -10px;
+    margin-top: 4vh;
     gap: 0.8vw;
 }
 
 .socials{
     display: flex;
+    padding-top: 2vh;
     gap: 0.5vw;
     margin-top: 5px;
     padding-left: 2vw;

@@ -27,7 +27,10 @@ function AboutUs(){
 
                 <div className="aboutContent">
                     <h2>Our Approach</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, id suscipit dolorem vitae laudantium ipsam? Quam aut, suscipit libero officia illo in, iure dolorem eum pariatur cum quisquam quod fuga.</p>
+                    <p>Roj Pagar seeks to change this narrative by providing a platform specifically designed to meet the requirements of daily wage workers. Through our innovative application, individuals can seamlessly navigate job listings posted by recruiters, selecting opportunities based on their availability, skills, and desired pay. Leveraging AI technology, our recommendation system analyses past preferences and company choices to offer tailored job suggestions, streamlining the job search process and enhancing user experience.
+                        <br /><br />
+
+                    By empowering daily wage earners with access to a diverse range of job opportunities and facilitating seamless connections between them and recruiters, Roj Pagar aims to uplift communities, drive economic growth, and foster a more inclusive society.</p>
                     
                 </div>
             </div>

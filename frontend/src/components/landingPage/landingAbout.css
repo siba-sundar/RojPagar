@@ -19,7 +19,7 @@ body{
 }
 
 .aboutUs p{
-    margin: -2vw 17vw;
+    margin: 2vh 17vw;
 }
 
 
@@ -87,6 +87,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4vh;
+    padding-bottom: 5vh;
 }
 
 .person img{

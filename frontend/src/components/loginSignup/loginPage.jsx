@@ -6,7 +6,7 @@ function LoginPage (){
     <>
         <div className='loginMainContainer'>
             <div className="loginnavBar">
-                <img src={logo} alt="logo" className="logo"/>
+                <img src={logo} alt="loginLogo" className="logo"/>
             </div>
 
 
