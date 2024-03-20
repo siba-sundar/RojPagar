@@ -1,2 +1,2 @@
 # RojPagar
-Developed a web application to connect the daily wage workers to recruiters. abcd efgh
+Developed a web application to connect the daily wage workers to recruiters.
