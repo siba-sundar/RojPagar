@@ -1,6 +1,6 @@
 import "./landingNavBar.css"
 import logo from "../assets/logo.svg"
-
+import {Link,NavLink} from 'react-router-dom'
 
 function LandingBar (){
     return  (
@@ -11,15 +11,17 @@ function LandingBar (){
 
             <div className="navOptions">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><NavLink to="/" class>Home</NavLink></li>
+                    <li><NavLink to="/aboutUs">About Us</NavLink></li>
+                    <li><NavLink to="/contacts">Contacts</NavLink></li>
                 </ul>
             </div>
 
             <div className="navButton">
-                <button className="loginButton">
-                    LogIn
+                <button className="loginButton" >
+                    <Link to="/login">Login
+                    </Link>
+                   
                 </button>
             </div>
 
