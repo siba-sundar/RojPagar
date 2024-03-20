@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: #F4F2EC;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.navBar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.logo {
+    height: 83px;
+    width: 173px;
+    margin-left: 2.5vw;
+}
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url("../assets/loginBackground.png");
+    background-position: bottom center;
+    background-size: 104vw 72vh;
+    background-repeat: no-repeat;
+}
+
+.loginContainer .content{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 86%;
+    width: 30%;
+    border-radius: 25px;
+    box-shadow: 1px 9px 10px rgba(0,0,0,0.5);
+}
+
+
+.content h1{
+    font-size: 3vw;
+    color: black;
+}
+
+.content .input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.input label{
+    margin-left: -15vw;
+    color: black;
+}
+
+.input input{
+    width: 25vw;
+    padding-left: 20px;
+    height: 32px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.blackButton{
+    margin-top: 33px;
+    width: 12vw;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.content .option{
+    font-family: "Gentium Book Plus", serif;
+    display: flex;
+    margin-top: 16px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.option a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.option p{
+    font-size:1.2vw;
+    color: black;
+}
