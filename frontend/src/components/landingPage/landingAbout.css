@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutMain{
+    background-color: #F4F2EC;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs h1{
+    font-size: 5vw;
+}
+
+.aboutUs p{
+    margin: -2vw 17vw;
+}
+
+
+.ourVision{
+    display: flex;
+    padding-top:40px ;
+}
+
+.ourVision .aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 6vw ;
+}
+
+.ourVision img{
+    padding: 3vw;
+    width: 40vw;
+}
+.ourVision .aboutContent h2{
+    font-size: 3.5vw;
+}
+
+
+
+.ourApproach{
+    display: flex;
+    padding-top:40px ;
+}
+
+.ourApproach .aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 6vw ;
+}
+
+.ourApproach img{
+    padding: 3vw;
+    width: 40vw;
+}
+.ourApproach .aboutContent h2{
+    font-size: 3.5vw;
+}
+
+.teamDetails {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamDetails h2{
+    font-size: 3.5vw;
+}
+
+.personDetails{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.personDetails .person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person img{
+    width: 10vw;
+}
+
+.personAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+
+.personAbout p{
+    margin: 1px;
+}

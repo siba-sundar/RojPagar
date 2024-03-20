@@ -1,5 +1,9 @@
+@import url("../Fonts/fonts.css");
+
+
 body{
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .mainContainer{
@@ -38,13 +42,11 @@ body{
     
 }
 .theButton{
-    padding-left: 9%;
+    padding:1vw 4vw;
     color: white;
-    padding-right: 9%;
-    padding-top: 3%;
-    padding-bottom: 3%;
     background-color: black;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 .highlighted{
@@ -184,4 +186,5 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }

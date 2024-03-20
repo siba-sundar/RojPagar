@@ -3,26 +3,28 @@ import location from "../assets/icons/bx-loc.svg"
 import card from "../assets/icons/bxs-credit-card.svg"
 import time from "../assets/icons/bxs-time.svg"
 
-function SquareCard(props){
+
+function SquareCard({details}){
     return (
         <>
-        <div className="jobCard">
+        {details.map((value,index)=>(
+        <div className="jobCard" key={index}>
             <div className="jobContent">
-                <h1>{props.title || "Type of job"}</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Cursus dui className et posuere consectetur commodo quis magna dignissim. Cursus neque feugiat diam at. Lorem cursus lacus varius className pellentesque enim urna netus congue. Vitae arcu dictumst sit rutrum aliquam adipiscing adipiscing.</p>
+                <h1>{value.job || "Type of job"}</h1>
+                <p>{value.detai}</p>
                 <div className="jobDetails">
                     <div className="container">
                         <img src={location} alt="" />
-                        <p>Location</p>
+                        <p>{value.location}</p>
                     </div>
                     <div className="container">
                         <img src={time} alt="" />
-                        <p>Duration</p>
+                        <p>{value.duration}</p>
                     </div>
                         
                     <div className="container">
                         <img src={card} alt="" />
-                        <p>Rs 10000</p>
+                        <p>{value.salary}</p>
                     </div>
                 </div>
 
@@ -31,6 +33,7 @@ function SquareCard(props){
                 </button>
             </div>
         </div>
+        ))}
         </>
     )
 }
