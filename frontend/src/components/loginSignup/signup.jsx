@@ -2,11 +2,13 @@ import React from 'react'
 import "./signup.css"
 import logo from "../assets/logo.svg"
 
+
 function SignUp() {
   return (
     <>
       <div className="mainSignupCOntainer">
         <img src={logo} alt="" className='logo'/>
+
         <div className="signupContent">
             <div className="subSignupContent">
               <h1>Create Account</h1>
@@ -24,21 +26,13 @@ function SignUp() {
                   <div className="userType">
                     <h2>SignIn As</h2>
                     <div>
-                      <label> <input
-                          type="radio"
-                          name="userType"
-                          value="Applicant"
-                        />
+                      <label> <input type="radio" name="userType" value="Applicant"/>
                         Applicant
                       </label>
                     </div>
                     <div>
                       <label>
-                        <input
-                          type="radio"
-                          name="userType"
-                          value="Recruiter"
-                        />
+                        <input type="radio" name="userType" value="Recruiter" />
                         Recruiter
                       </label>
                     </div>
@@ -48,48 +42,30 @@ function SignUp() {
                   <div className="preferredJobs">
                     <h2>Preffered Jobs</h2>
                     <div>
-                      <label> <input
-                          type="checkbox"
-                          name="preferredJobs"
-                          value="Painter"
-                        />
-                        Painter
-                      </label>
-                    </div>
-                    <div>
-                      <label>
-                        <input
-                          type="checkbox"
-                          name="preferredJobs"
-                          value="Plumber"
-                        />
-                        Plumber
-                      </label>
-                    </div>
-                    <div>
-                      <label> <input
-                          type="checkbox"
-                          name="preferredJobs"
-                          value="Labourer"
-                        />
+                        <label>
+                          <input type="checkbox" name="preferredJobs" value="Plumber" />
+                          Painter
+                        </label>
+                        <label>
+                          <input type="checkbox" name="preferredJobs" value="Plumber"/>
+                          Plumber
+                        </label>
+                        <label> <input type="checkbox"  name="preferredJobs" value="Labourer"/>
                         Labourer
-                      </label>
-                    </div>
-                    <div>
-                      <label>
-                        <input
-                          type="checkbox"
-                          name="preferredJobs"
-                          value="Electrician"
-                        />
+                        </label>
+                        <label>
+                        <input type="checkbox" name="preferredJobs" value="Electrician" />
                         Electrician
-                      </label>
-                    </div>
-                    
+                        </label>
+                        </div>
                   </div>
                 </div>
               </div>
-              <button className="Signup">Sign Up</button>
+              <button className="signup">Sign Up</button>
+              <div className="haveAccount">
+                <p>Have an Account?</p>
+                <a href="#">Log in</a>
+              </div>
             </div>
         </div>
       </div>
