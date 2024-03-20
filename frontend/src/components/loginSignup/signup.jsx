@@ -1,4 +1,5 @@
 import React from 'react'
+import "./signup.css"
 import logo from "../assets/logo.svg"
 
 function SignUp() {
@@ -7,10 +8,88 @@ function SignUp() {
       <div className="mainSignupCOntainer">
         <img src={logo} alt="" className='logo'/>
         <div className="signupContent">
-            <h1>Create Account</h1>
-            <div className="signupDetails">
-                <input type="text" placeholder='Full Name' />
-                <input type="text" placeholder='' />
+            <div className="subSignupContent">
+              <h1>Create Account</h1>
+              <div className="signupUserInputs">
+                <div className="signupDetails">
+                    <input type="text" placeholder='Full Name' />
+                    <input type="text" placeholder='Aadhar Card' />
+                    <input type="text" placeholder='Phone Number' />
+                    <input type="password" placeholder='password' />
+                    <input type="password"  placeholder='Confirm Password'/>
+                    <input type="text" placeholder='Location' />
+                </div>
+
+                <div className="signupPreferrences">
+                  <div className="userType">
+                    <h2>SignIn As</h2>
+                    <div>
+                      <label> <input
+                          type="radio"
+                          name="userType"
+                          value="Applicant"
+                        />
+                        Applicant
+                      </label>
+                    </div>
+                    <div>
+                      <label>
+                        <input
+                          type="radio"
+                          name="userType"
+                          value="Recruiter"
+                        />
+                        Recruiter
+                      </label>
+                    </div>
+                  </div>
+
+
+                  <div className="preferredJobs">
+                    <h2>Preffered Jobs</h2>
+                    <div>
+                      <label> <input
+                          type="checkbox"
+                          name="preferredJobs"
+                          value="Painter"
+                        />
+                        Painter
+                      </label>
+                    </div>
+                    <div>
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="preferredJobs"
+                          value="Plumber"
+                        />
+                        Plumber
+                      </label>
+                    </div>
+                    <div>
+                      <label> <input
+                          type="checkbox"
+                          name="preferredJobs"
+                          value="Labourer"
+                        />
+                        Labourer
+                      </label>
+                    </div>
+                    <div>
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="preferredJobs"
+                          value="Electrician"
+                        />
+                        Electrician
+                      </label>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <button className="Signup">Sign Up</button>
             </div>
         </div>
       </div>

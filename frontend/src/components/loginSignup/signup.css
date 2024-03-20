@@ -7,3 +7,56 @@ body{
     width: 173px;
     margin-left: 2.5vw;
 }
+
+.signupContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 100vw;
+    height: 86.5vh;
+}
+
+.subSignupContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+    height: 80vh;
+    width: 80vw;
+}
+.signupUserInputs{
+    display: flex;
+    background-color: rebeccapurple;
+    width: 95%;
+    height: 90%;
+}
+.signupDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: bisque;
+}
+
+
+.signupDetails input{
+    width: 25vw;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding-left: 1vw;
+}
+
+
+.signupPreferrences{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

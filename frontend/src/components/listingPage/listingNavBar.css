@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.listingContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #F4F2EC;
+}
+
+.listingLogo{
+        height: 83px;
+        width: 173px;
+        margin-left: 2.5vw;
+    
+}
+
+.listingContainer .listingSearchBar{
+    display: flex;
+    margin-left:15vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-right: 20px;
+}
+
+.listingSearchBar input{
+    width: 35vw;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    background-color: #F4F2EC;
+}
+
+.listingOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    gap: 4vw;
+}
+
+.listingOptionsLogo{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.profileimg{
+}
