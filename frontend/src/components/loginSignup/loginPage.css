@@ -1,10 +1,10 @@
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
-.mainContainer{
+.loginMainContainer{
     height: 100vh;
     width: 100vw;
     background-color: #F4F2EC;
@@ -12,7 +12,7 @@
 }
 
 
-.navBar{
+.loginNavBar{
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
 }
 
-.loginContainer .content{
+.loginContainer .loginContent{
     background-color: white;
     display: flex;
     align-items: center;
@@ -51,24 +51,24 @@
 }
 
 
-.content h1{
+.loginContent h1{
     font-size: 3vw;
     color: black;
 }
 
-.content .input{
+.loginContent .loginInput{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 4vh;
 }
 
-.input label{
+.loginInput label{
     margin-left: -15vw;
     color: black;
 }
 
-.input input{
+.loginInput input{
     width: 25vw;
     padding-left: 20px;
     height: 32px;
@@ -78,7 +78,7 @@
     background-color: white;
 }
 
-.blackButton{
+.loginBlackButton{
     margin-top: 33px;
     width: 12vw;
     height: 40px;
@@ -90,7 +90,7 @@
 }
 
 
-.content .option{
+.loginContent .loginOption{
     font-family: "Gentium Book Plus", serif;
     display: flex;
     margin-top: 16px;
@@ -99,13 +99,13 @@
     justify-content: center;
 }
 
-.option a{
+.loginOption a{
     color: black;
     text-decoration: none;
     font-weight: 900;
 }
 
-.option p{
+.loginOption p{
     font-size:1.2vw;
     color: black;
 }

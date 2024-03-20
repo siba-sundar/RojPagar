@@ -4,29 +4,29 @@ import logo from "../assets/logo.svg"
 function LoginPage (){
     return (
     <>
-        <div className='mainContainer'>
-            <div className="navBar">
+        <div className='loginMainContainer'>
+            <div className="loginnavBar">
                 <img src={logo} alt="logo" className="logo"/>
             </div>
 
 
             <div className="loginContainer">
-                <div className='content'>
+                <div className='loginContent'>
                     <h1>Log In</h1>
 
-                    <div className="input">
+                    <div className="loginInput">
                         <label for="username">Username</label>
                         <input type="text" className="username"/>
                     </div>
 
-                    <div className="input">
-                        <label for="password">Password</label>
-                        <input type="password" className="password"/>
+                    <div className="loginInput">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" className="loginPassword"/>
                     </div>
                     
-                    <button className="blackButton">Login</button>
+                    <button className="loginBlackButton">Login</button>
 
-                    <div className="option">
+                    <div className="loginOption">
                         <p>Don't have an Account?</p>
                         <a href="#">Sign In</a>
                     </div>
