@@ -1,8 +1,8 @@
 // server.js
-const express = require('express');
-const cors = require('cors')
+import express from 'express';
+import cors from 'cors';
 const PORT = process.env.PORT
-const jobRoutes = require('./routes/jobRoutes');
+import jobRoutes from './routes/jobRoutes.js';
 
 // MongoDB Connection
 const connectToDatabase = require('./database/connection')
