@@ -2,6 +2,7 @@ import "./squareJobCard.css"
 import location from "../assets/icons/bx-loc.svg"
 import card from "../assets/icons/bxs-credit-card.svg"
 import time from "../assets/icons/bxs-time.svg"
+import { Link } from "react-router-dom"
 
 
 function SquareCard({details}){
@@ -29,7 +30,7 @@ function SquareCard({details}){
                 </div>
 
                 <button className="squareCardButton">
-                    Apply Now
+                    <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit' }}>Apply Now</Link>
                 </button>
             </div>
         </div>

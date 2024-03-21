@@ -50,7 +50,9 @@
     align-items: center;
     gap: 1vw;
 }
-
+.listingProfileImg img{
+    width: 3vw;
+}
 .listingOptionsLogo:hover{
     cursor: pointer;
 }

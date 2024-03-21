@@ -3,6 +3,13 @@ import teammateProfile from "../assets/teammatesProfile.png"
 
 import visionBanner from "../assets/visionBanner.svg"
 import approachBanner from "../assets/approachBanner.svg"
+import pfp1 from "../assets/Ellipse 5.png"
+import pfp2 from "../assets/Ellipse 6.svg"
+import pfp3 from "../assets/Ellipse 7.svg"
+import pfp4 from "../assets/Ellipse 8.svg"
+import pfp5 from "../assets/Ellipse 9.svg"
+
+
 
 function AboutUs(){
     return(
@@ -10,7 +17,7 @@ function AboutUs(){
         <div class="aboutMain">
             <div className="aboutUs">
                 <h1>About US</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui non maxime illo excepturi eligendi enim? Ullam assumenda reiciendis hic in dolores, natus aperiam animi velit quisquam? Harum, voluptates. Vel, veritatis?</p>
+                <p>At RojPagar, we are dedicated to revolutionizing the way daily laborers find employment opportunities. With our innovative platform, we aim to bridge the gap between employers and workers, ensuring a seamless and efficient process for both parties.</p>
             </div>
 
             <div className="ourVision">
@@ -40,42 +47,42 @@ function AboutUs(){
                 <h2>Meet The Team</h2>
                 <div className="personDetails">
                     <div className="person">
-                        <img src={teammateProfile} alt="" />
+                        <img src={pfp1} alt="" />
                         <div className="personAbout">
-                            <p>Person Name</p>
-                            <p><i>Designation</i></p>
+                            <p>Sahil Sharma</p>
+                            <p><i>Team Lead</i></p>
                         </div>
                     </div>
 
                     <div className="person">
-                        <img src={teammateProfile} alt="" />
+                        <img src={pfp2} alt="" />
                         <div className="personAbout">
-                            <p>Person Name</p>
-                            <p><i>Designation</i></p>
+                            <p>Saksham Shrey</p>
+                            <p><i>Backend Developer</i></p>
                         </div>
                     </div>
 
                     <div className="person">
-                        <img src={teammateProfile} alt="" />
+                        <img src={pfp3} alt="" />
                         <div className="personAbout">
-                            <p>Person Name</p>
-                            <p><i>Designation</i></p>
+                            <p>Siba Sundar</p>
+                            <p><i>UI/UX and Frontend Developer</i></p>
                         </div>
                     </div>
 
                     <div className="person">
-                        <img src={teammateProfile} alt="" />
+                        <img src={pfp4} alt="" />
                         <div className="personAbout">
-                            <p>Person Name</p>
-                            <p><i>Designation</i></p>
+                            <p>Aryan Sheregar</p>
+                            <p><i>Ai and Backend Developer</i></p>
                         </div>
                     </div>
 
                     <div className="person">
-                        <img src={teammateProfile} alt="" />
+                        <img src={pfp5} alt="" />
                         <div className="personAbout">
-                            <p>Person Name</p>
-                            <p><i>Designation</i></p>
+                            <p>Harsh Singla</p>
+                            <p><i>Frontend Developer</i></p>
                         </div>
                     </div>
                 </div>

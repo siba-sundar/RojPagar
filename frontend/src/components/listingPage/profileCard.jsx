@@ -8,7 +8,7 @@ function ProfileCardrofileCard({details}) {
   return (
     <>
     {details.map((value,index)=>(
-    <div className='profileCard' key={index}>
+    <div className='profileCardcycle' key={index}>
             <img src={value.img || profilePicture} alt="img" className='profileCardImg' />
             <h2>{value.username}</h2>
             <p><i>{value.userarea} | {value.userdistrict}</i></p>

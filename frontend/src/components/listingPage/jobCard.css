@@ -1,4 +1,4 @@
-.jobCard{
+.jobCardcar{
     border: 1px solid black;
     width: 60vw;
     height: 30vh;
@@ -8,37 +8,37 @@
     margin-top:2.5vh ;
 }
 
-.recruiterInfo {
+.recruiterInfocar {
     display: flex;
 }
 
-.recruiterInfo img{
+.recruiterInfocar img{
     padding: 10px;
 }
 
-.details{
+.detailscar{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.recruiterInfo .details h3{
+.recruiterInfocar .detailscar h3{
     font-size: 1.5vw;
 }
 
-.recruiterInfo .details p{
+.recruiterInfocar .detailscar p{
     font-size: 1vw;
 }
 
-.jobDetails{
+.jobDetailscar{
     margin-left: 20px;
 }
 
-.jobDetails h2{
+.jobDetailscar h2{
     font-size:1.7vw;
 }
 
-.jobDetails .jobDescription{
+.jobDetailscar .jobDescriptioncar{
     display: flex;
     overflow: hidden;
     font-size:0.9vw;
@@ -47,13 +47,13 @@
     max-height: 9vh;
 }
 
-.info{
+.infocar{
     display: flex;
     gap:2vw;
     margin-top: 2vh;
 }
 
-.infoCard{
+.infoCardcar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,13 +66,13 @@
 }
 
 
-.infoCard img{
+.infoCardcar img{
     width: 1.2vw;
     height: 1.2vw;
 }
 
 
-.infoCard p{
+.infoCardcar p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +81,7 @@
 }
 
 
-.info button{
+.infocar button{
     margin-left: 15vw;
     background-color: black;
     color: white;
@@ -91,7 +91,7 @@
 }
 
 
-.jobCard:hover{
+.jobCardcar:hover{
      box-shadow: 7px 7px rgba(0,0,0,0.5); 
      cursor: pointer;
 }

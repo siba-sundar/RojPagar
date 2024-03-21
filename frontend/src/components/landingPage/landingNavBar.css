@@ -2,24 +2,25 @@ body{
     padding: 0;
     margin: 0;
 }
-.navBar{
+.navBarbike{
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     background-color: #F4F2EC;
     padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 
-.logo {
+.logobike {
     height: 83px;
     width: 173px;
     margin-left: 2.5vw;
 }
 
 
-.navOptions{
+.navOptionsbike{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,30 +29,30 @@ body{
     height: 100%;
 
 }
-.navOptions ul {
+.navOptionsbike ul {
     display: flex;
     gap: 4vw;
 }
 
-.navOptions li{
+.navOptionsbike li{
     list-style: none;
 }
 
-.navOptions li a{
+.navOptionsbike li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 1.5vw;
 }
 
-.navButton{
+.navButtonbike{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 21vw;
 }
- .loginButton {
+ .loginButtonbike {
     height: 34px;
     width: 10vw;
     cursor: pointer;
@@ -71,11 +72,11 @@ body{
     justify-content: center;
 }
 
-.loginButton link{
+.loginButtonbike link{
     text-decoration: none;
 }
   
- .loginButton::before {
+ .loginButtonbike::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -89,17 +90,20 @@ body{
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
   
-.loginButton:hover:before {
+.loginButtonbike:hover:before {
     scale: 3;
 }
   
-.loginButton:hover {
+.loginButtonbike:hover {
     color: #ffffff;
     scale: 1.1;
     box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
   
-.loginButton:active {
+.loginButtonbike:active {
     scale: 1;
 } 
 
+button:hover{
+    cursor: pointer;
+}
