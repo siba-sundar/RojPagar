@@ -118,7 +118,7 @@ const loginUser = async (req, res) => {
 
 const getApplicant = async (req, res) => {
     try {
-        const user_id = new ObjectId(req.params.id)//idk strike off kyu aa raha hai
+        const user_id = new ObjectId(req.params.id)
         const user = await Applicant.findOne({ _id: user_id }).select('-password')
         if (!user) {
             return res.json({ success: false, message: "User not found." })
@@ -132,7 +132,7 @@ const getApplicant = async (req, res) => {
 
 const getCompany = async (req, res) => {
     try {
-        const user_id = new ObjectId(req.params.id)//idk strike off kyu aa raha hai
+        const user_id = new ObjectId(req.params.id)
         const user = await Company.findOne({ _id: user_id }).select('-password')
         if (!user) {
             return res.json({ success: false, message: "User not found." })
