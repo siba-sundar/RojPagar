@@ -5,6 +5,7 @@
     background-color: white;
     border-radius: 10px;
     transition: 0.4s;
+    margin-top:2.5vh ;
 }
 
 .recruiterInfo {
@@ -19,7 +20,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top:-10px;
 }
 
 .recruiterInfo .details h3{
@@ -27,27 +27,30 @@
 }
 
 .recruiterInfo .details p{
-    margin-top: -13px;
     font-size: 1vw;
 }
 
 .jobDetails{
     margin-left: 20px;
-    margin-top: -25px;
 }
 
 .jobDetails h2{
     font-size:1.7vw;
 }
 
-.jobDetails p{
+.jobDetails .jobDescription{
+    display: flex;
+    overflow: hidden;
     font-size:0.9vw;
-    margin-top: -10px;
+    width:90%;
+    word-wrap: break-word;
+    max-height: 9vh;
 }
 
 .info{
     display: flex;
     gap:2vw;
+    margin-top: 2vh;
 }
 
 .infoCard{
@@ -58,19 +61,22 @@
     border: 1px solid black;
     height: 20px;
     width: 8vw;
+    padding: 2vh;
+
 }
 
 
 .infoCard img{
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 1.2vw;
+    height: 1.2vw;
 }
 
 
 .infoCard p{
     display: flex;
-    font-size: 70%;
-    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1vw;
     margin-left:0.3vw ;
 }
 
@@ -82,10 +88,10 @@
     font-weight: bold;
     padding: 0.5vw 1.5vw;
     border-radius: 20px;
-    margin-top: -15px;
 }
 
 
 .jobCard:hover{
      box-shadow: 7px 7px rgba(0,0,0,0.5); 
+     cursor: pointer;
 }

@@ -4,12 +4,12 @@ import location from "../assets/icons/bx-loc.svg"
 import card from "../assets/icons/bxs-credit-card.svg"
 import time from "../assets/icons/bxs-time.svg"
 
+function JobCard({detail}){
 
-
-function JobCard({details}){
+    
     return(
         <>
-        {details.map((value,index)=>(
+        {detail.map((value,index)=>(
         <div className="jobCard" key={index}>
             <div className="recruiterInfo">
                 <img src={value.img || profileImg} alt="" className="profileImg" />
@@ -20,7 +20,7 @@ function JobCard({details}){
             </div>
             <div className="jobDetails">
                 <h2>{value.job}</h2>
-                <p>{value.jobDescription}</p>
+                <p className="jobDescription" style={{wordBreak: 'break-word'}}>{value.jobDescription}</p>
 
                 <div className="info">
                     <div className="infoCard">
@@ -33,7 +33,7 @@ function JobCard({details}){
                     </div>
                     <div className="infoCard">
                         <img src={time} alt="" className="icon" />
-                        <p>{value.duraton}</p>
+                        <p>{value.duration}</p>
                     </div>
 
                     <button>Apply Now</button>
@@ -47,5 +47,4 @@ function JobCard({details}){
 }
 
 export default JobCard
-
 

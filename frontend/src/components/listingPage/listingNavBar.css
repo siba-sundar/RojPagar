@@ -51,5 +51,10 @@
     gap: 1vw;
 }
 
-.profileimg{
+.listingOptionsLogo:hover{
+    cursor: pointer;
+}
+
+.listingProfileImg:hover{
+    cursor: pointer;
 }
