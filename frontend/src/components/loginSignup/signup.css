@@ -62,13 +62,25 @@ body{
     padding: 2vh;
 }
 
+.userType input{
+    margin-top: 2vh;
+}
+
 
 .signupPreferrences{
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+    margin-top: 14vh;
+    gap: 6vh;
 }
 
+.preferredJobs div{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-left: 2vw 
+}
 .signup{
     width: 10vw;
     padding: 1vw;
@@ -89,6 +101,6 @@ body{
     color: black;
     font-weight: 900;
 }
-/*sfdfb*/
+
 
 

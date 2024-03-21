@@ -4,7 +4,7 @@ import JobCard from  "../landingPage/squareJobCard.jsx"
 import banner from "../assets/banner.svg"
 import members from "../assets/members.svg"
 import hireBanner from "../assets/hireBanner.svg"
-
+import { Link } from "react-router-dom"
 
 function Home() {
     const detail = [
@@ -75,7 +75,7 @@ function Home() {
                     <h1>Find The Job For You</h1>
                     <p>Connecting Daily Labor with Daily Work: Your Path to Opportunity Starts Here</p>
                     <div>
-                        <button className="theButton">Find Job</button>
+                        <button className="theButton"> <Link to="/signup" style={{ textDecoration: 'none', color: 'white' }}>Find Job</Link></button>
                         <button className="theButton">Hire Someone</button>
                     </div>
                 </div>
@@ -100,7 +100,9 @@ function Home() {
 
                     Contact us today for personalized support on your journey to finding daily work!
                     </p>
-                    <button className="theButton">Contact Us</button>
+                    <button className="theButton">
+                        <Link to="/contacts" style={{ textDecoration: 'none', color: 'white' }}>Contact Us</Link>
+                    </button>
                 </div>
             </div>
 

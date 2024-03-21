@@ -1,5 +1,6 @@
 import "../loginSignup/loginPage.css"
 import logo from "../assets/logo.svg"
+import { Link, NavLink } from "react-router-dom"
 
 function LoginPage (){
     return (
@@ -28,7 +29,7 @@ function LoginPage (){
 
                     <div className="loginOption">
                         <p>Don't have an Account?</p>
-                        <a href="#">Sign In</a>
+                        <NavLink to="/signup" >Sign Up</NavLink>
                     </div>
                 </div>
             </div>

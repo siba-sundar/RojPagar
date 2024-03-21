@@ -1,9 +1,9 @@
 import React from 'react'
 import "./signup.css"
 import logo from "../assets/logo.svg"
+import { Link } from 'react-router-dom'
 
-
-function SignUp() {
+function Signup() {
   return (
     <>
       <div className="mainSignupCOntainer">
@@ -64,7 +64,7 @@ function SignUp() {
               <button className="signup">Sign Up</button>
               <div className="haveAccount">
                 <p>Have an Account?</p>
-                <a href="#">Log in</a>
+                <Link to="/login">Log In</Link>
               </div>
             </div>
         </div>
@@ -73,5 +73,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
-//aaa
+export default Signup
