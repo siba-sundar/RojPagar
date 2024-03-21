@@ -61,10 +61,12 @@ function Signup() {
                   </div>
                 </div>
               </div>
-              <button className="signup">Sign Up</button>
+              <button className="signup">
+                <Link to="/login">Sign Up</Link>
+                </button>
               <div className="haveAccount">
                 <p>Have an Account?</p>
-                <Link to="/login">Log In</Link>
+                <Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>Log In</Link>
               </div>
             </div>
         </div>

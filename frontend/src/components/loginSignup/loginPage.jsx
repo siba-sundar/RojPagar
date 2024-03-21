@@ -25,7 +25,9 @@ function LoginPage (){
                         <input type="password" className="loginPassword"/>
                     </div>
                     
-                    <button className="loginBlackButton">Login</button>
+                    <button className="loginBlackButton">
+                        <Link to="/listinghome">Login</Link>
+                        </button>
 
                     <div className="loginOption">
                         <p>Don't have an Account?</p>
