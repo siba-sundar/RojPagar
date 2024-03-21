@@ -1,19 +1,33 @@
 .profileCard{
-    border: 1px solid black;
+    border: 1.5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2vw;
+    margin: 1vw;
     border-radius: 10px;
-    padding: 20px;
+    padding: 1vw;
     height: 211px;
-    width: 172px;
+    width: 13vw;
+    overflow: hidden;
+    gap: 1vh;
+    transition: 0.4s;
+}
+
+.profileCard:hover{
+    box-shadow: 7px 7px rgba(0,0,0,0.5); 
+    cursor: pointer;
 }
 
 
-img{
+.profileCardImg{
     border-radius: 50%;
     object-fit: cover;
-
+    width: 4vw;
+    margin-top: -5vh;
 }
+
+.profileDescription {
+    font-size: 0.9vw;
+    max-height: 3vh;
+  }

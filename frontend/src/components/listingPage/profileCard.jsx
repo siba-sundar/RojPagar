@@ -4,15 +4,15 @@ import profilePicture from "../assets/profileImage.svg"
 
 
 
-function ProfileCardrofileCard({detail}) {
+function ProfileCardrofileCard({details}) {
   return (
     <>
-    {detail.map((value,index)=>(
+    {details.map((value,index)=>(
     <div className='profileCard' key={index}>
-            <img src={value.img} alt="img" />
+            <img src={value.img || profilePicture} alt="img" className='profileCardImg' />
             <h2>{value.username}</h2>
             <p><i>{value.userarea} | {value.userdistrict}</i></p>
-            <p>{value.description}</p>
+            <p className='profileDescription' style={{wordBreak: 'break-word'}}>{value.description}</p>
     </div>
     ))};
     </>

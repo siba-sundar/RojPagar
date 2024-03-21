@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.exploreJobsList{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+.listingJobOptions{
+    display: flex;
+    gap: 4vw;
+}
+
+.listingJobName{
+    border: 1px solid black;
+    padding:0.6vw 6vh;
+    border-radius:30px ;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.listingJobName a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.listingJobName:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+}
+
+.listingRecommendations{
+    display: flex;
+    width: 100vw;
+}
+
+
+.listingRecommendations .jobRecomendations{
+    padding-left: 3vw;
+    width: 65vw;
+
+}
+.listingRecommendations .profileRecomendations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 35vw;
+    border-left: 1px solid black;
+}
+
+.profileRecommendContainer .heading{
+    padding-left: 2vw;
+}
