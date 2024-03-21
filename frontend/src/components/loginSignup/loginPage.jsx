@@ -26,7 +26,7 @@ function LoginPage (){
                     </div>
                     
                     <button className="loginBlackButton">
-                        <Link to="/listinghome">Login</Link>
+                        <Link to="/listinghome" style={{ textDecoration: 'none', color: 'inherit' }}>Login</Link>
                         </button>
 
                     <div className="loginOption">

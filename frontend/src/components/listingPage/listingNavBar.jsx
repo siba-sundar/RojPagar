@@ -7,7 +7,7 @@ import bookmark from "../assets/icons/bx-bookmark.svg"
 import jobs from "../assets/icons/bx-briefcase.svg"
 import settings from "../assets/icons/bx-cog.svg"
 import search from "../assets/icons/bx-search.svg"
-import profileImg from "../assets/profileImage.svg"
+import profileImg from "../assets/Ellipse 17.svg"
 
 function NavBar (){
     return (
