@@ -4,6 +4,7 @@ const cors = require('cors');
 const PORT = process.env.PORT
 //import jobRoutes from './routes/jobRoutes.js';
 
+// setup restarted 
 // MongoDB Connection
 const connectToDatabase = require('./database/connection')
 connectToDatabase()
