@@ -1,39 +1,24 @@
-// server.js
-const express = require('express');
-const cors = require('cors');
-const PORT = process.env.PORT
-//import jobRoutes from './routes/jobRoutes.js';
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
 
-// setup restarted 
-// MongoDB Connection
-const connectToDatabase = require('./database/connection')
-connectToDatabase()
+import authRoutes from "./routes/authRoutes.js";
+
+dotenv.config();
+
+// Connect to MongoDB
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+}).then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.error("MongoDB Connection Error:", err));
 
 const app = express();
-
-// Middleware
 app.use(express.json());
+app.use(cors());
 
-app.use(cors())
+app.use("/api/auth", authRoutes);
 
-// Routes
-//app.use('/api', jobRoutes);
-
-
-
-app.get('/', (req, res) => {
-    res.send('<center><h1>Welcome to Roj Pagar Backend</h1>' +
-        '<h3><a href="https://github.com/Aryan-Sheregar/RojPagar.git" target="_blank">Visit Repository</a></h3></center>')
-})
-
-
-
-
-
-// Start the server
-app.listen(PORT, () => {
-    console.log(`RojPagar Backend listening on http://localhost:${PORT}`)
-})
-
-
-module.exports = app
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
