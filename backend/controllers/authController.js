@@ -1,5 +1,30 @@
 import { User } from "../models/User.js";
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config(); // Load environment variables
+
+// Generate Access Token
+const generateAccessToken = (user) => {
+    return jwt.sign(
+        {
+            _id: user._id,
+            username: user.username,
+            fullName: user.fullName
+        },
+        process.env.ACCESS_TOKEN_SECRET, // Secret key from .env
+        { expiresIn: process.env.ACCESS_TOKEN_EXPIRY } // Expiry time (e.g., 15m)
+    );
+};
+
+// Generate Refresh Token
+const generateRefreshToken = (user) => {
+    return jwt.sign(
+        { _id: user._id },
+        process.env.REFRESH_TOKEN_SECRET, // Secret key from .env
+        { expiresIn: process.env.REFRESH_TOKEN_EXPIRY } // Expiry time (e.g., 7d)
+    );
+};
 
 /**
  * @desc Register a new user
@@ -40,10 +65,10 @@ export const loginUser = async (req, res) => {
         if (!isMatch) return res.status(401).json({ message: "Invalid credentials" });
 
         // Generate tokens
-        const accessToken = user.generateAccessToken();
-        const refreshToken = user.generateRefreshToken();
+        const accessToken = generateAccessToken(user);
+        const refreshToken = generateRefreshToken(user);
 
-        // Save refresh token to user
+        // Save refresh token in DB
         user.refreshToken = refreshToken;
         await user.save();
 
@@ -69,7 +94,8 @@ export const refreshAccessToken = async (req, res) => {
         jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decoded) => {
             if (err) return res.status(403).json({ message: "Invalid refresh token" });
 
-            const newAccessToken = user.generateAccessToken();
+            // Generate a new access token
+            const newAccessToken = generateAccessToken(user);
             res.json({ accessToken: newAccessToken });
         });
     } catch (error) {
