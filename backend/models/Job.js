@@ -25,7 +25,7 @@ const jobSchema = new mongoose.Schema(
         },
         recruiter: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "User", // Reference to User model (Recruiter)
+            ref: "User", // Reference to Recruiter
             required: true
         },
         applicants: [
