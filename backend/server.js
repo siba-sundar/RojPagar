@@ -5,7 +5,7 @@ import cors from "cors";
 
 import authRoutes from "./routes/authRoutes.js";
 import protectedRoutes from "./routes/protectedRoutes.js"; // ✅ Import protected routes
-
+import jobRoutes from "./routes/jobRoutes.js";
 dotenv.config();
 
 // Connect to MongoDB
@@ -19,6 +19,6 @@ app.use(cors());
 
 app.use("/api/auth", authRoutes);
 app.use("/api", protectedRoutes); // ✅ Integrated protected routes
-
+app.use("/api/jobs", jobRoutes);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
