@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import JobCard from "./components/loginSignup/signup"
 
@@ -13,11 +13,19 @@ import JobDetails from './components/listingPage/jobDetails.jsx';
 
 
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
+import { createBrowserRouter, generatePath, RouterProvider } from 'react-router-dom'
+import { generateToken } from './notifications/firebase.js';
+import { onMessage } from 'firebase/messaging';
 function App() {
   const [count, setCount] = useState(0)
-
+  useEffect(()=>{
+    generateToken();
+    onMessage(Messaging, (payload)=>{
+      console.log('====================================');
+      console.log(payload);
+      console.log('====================================');
+    })
+  },[])
 
   const router = createBrowserRouter([
     {
