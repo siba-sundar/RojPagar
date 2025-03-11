@@ -16,7 +16,7 @@ function ListingHome() {
   const details = [
     {
       'username': "Ram",
-      'img':img8,
+      'img': img8,
       'address': "Panchkula",
       'district': "Panchkula",
       'job': "Painter",
@@ -27,7 +27,7 @@ function ListingHome() {
     },
     {
       'username': "Mohan",
-      'img':img9,
+      'img': img9,
       'address': "Vijaywada",
       'district': "Vijaywada",
       'job': "Labour",
@@ -38,7 +38,7 @@ function ListingHome() {
     },
     {
       'username': "Shayam",
-      'img':img3,
+      'img': img3,
       'address': "Jind",
       'district': "Jind",
       'job': "Plumber",
@@ -62,57 +62,58 @@ function ListingHome() {
 
   const Details = [
     {
-      "img":img1,
+      "img": img1,
       "username": "priyanshu_gupta88",
       "userarea": "Chennai West",
       "userdistrict": "Anna Nagar",
       "description": "Talented carpenter skilled in designing and building custom wooden cabinets and storage solutions."
-  },
-  {
-    "img":img2,
+    },
+    {
+      "img": img2,
       "username": "vishali_singh19",
       "userarea": "Kolkata East",
       "userdistrict": "Salt Lake City",
       "description": "Proficient carpenter specializing in intricate wood carving and joinery. "
-  },
-  {
-    "img":img5,
+    },
+    {
+      "img": img5,
       "username": "nehal_patil05",
       "userarea": "Bengaluru North",
       "userdistrict": "Hebbal",
       "description": "Skilled carpenter adept at creating modern and minimalist furniture designs. "
-  },
-  {
-    "img":img6,
+    },
+    {
+      "img": img6,
       "username": "sandeep_sharma72",
       "userarea": "Mumbai Central",
       "userdistrict": "Dadar",
       "description": "Experienced carpenter with expertise in traditional Indian furniture crafting techniques."
-  },
+    },
   ]
 
   return (
     <>
-      <div className="listingNavBar"><ListingNavBar/></div>
-      <div className="exploreJobsList">
-        <h3>Explore jobs</h3>
-        <div className="listingJobOptions">
-          <div className="listingJobName"><a href="#">Painter</a></div>
-          <div className="listingJobName"><a href="#">Plumber</a></div>
-          <div className="listingJobName"><a href="#">Labour</a></div>
-          <div className="listingJobName"><a href="#">Carpenter</a></div>
+      <div className='pt-10'>
+        <div className="exploreJobsList">
+          <h3 className='font-semibold'>Explore jobs</h3>
+          <div className="flex gap-10 ">
+            <div className="listingJobName"><a href="#">Painter</a></div>
+            <div className="listingJobName"><a href="#">Plumber</a></div>
+            <div className="listingJobName"><a href="#">Labour</a></div>
+            <div className="listingJobName"><a href="#">Carpenter</a></div>
+          </div>
         </div>
-      </div>
-      <div className="listingRecommendations">
-        
-        <div className="jobRecomendations">
-          <h2>Job Recommendations</h2>
-          <JobCard detail={details}/>
-        </div>
-        <div className="profileRecommendContainer">
-          <h2 className='heading'>Profile Recommendations</h2>
+        <div className="listingRecommendations">
+
+          <div className="pl-14 pr-5">
+            <h2 className='font-semibold'>Job Recommendations</h2>
+            <JobCard detail={details} />
+          </div>
+          <div className="profileRecommendContainer">
+            <h2 className='heading'>Profile Recommendations</h2>
             <div className="profileRecomendations">
-          <ProfileCard details={Details}/>
+              <ProfileCard details={Details} />
+            </div>
           </div>
         </div>
       </div>

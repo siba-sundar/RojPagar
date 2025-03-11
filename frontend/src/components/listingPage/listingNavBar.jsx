@@ -12,7 +12,7 @@ import profileImg from "../assets/Ellipse 17.svg"
 function NavBar (){
     return (
         <>
-            <div className="listingContainer">
+            <div className="listingContainer fixed">
                 <img src={logo} alt="logo" className="listingLogo"/>
 
                 <div className="listingSearchBar">

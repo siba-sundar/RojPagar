@@ -13,6 +13,10 @@ import JobDetails from './components/listingPage/jobDetails.jsx';
 
 
 
+// screens & layouts
+import WorkerLayout from './layouts/WorkerLayout.jsx';
+
+
 import { createBrowserRouter, generatePath, RouterProvider } from 'react-router-dom'
 import { generateToken } from './notifications/firebase.js';
 import { onMessage } from 'firebase/messaging';
@@ -40,7 +44,13 @@ function App() {
     { path: "login", element: <LoginPage /> },
     { path: "signup", element: <Signup /> },
     { path: "contacts", element: <Contacts /> },
-    { path: "listinghome", element: <ListingHome /> },
+    { 
+      path: "worker-home", 
+      element: <WorkerLayout />, 
+      children: [
+        {index: true, element: <ListingHome/>},
+      ]
+    },
     { path: "jobdetails", element: <JobDetails /> }
   ]);
 

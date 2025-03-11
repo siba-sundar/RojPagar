@@ -192,7 +192,7 @@ function Signup() {
               </div>
             )}
 
-            <div className="flex flex-col md:flex-row h-full gap-10 w-[65vw]">
+            <div className="flex flex-col md:flex-row h-full gap-10 w-[6vw]">
               <div className="flex flex-col gap-3 justify-center">
                 <div>
                   <input
