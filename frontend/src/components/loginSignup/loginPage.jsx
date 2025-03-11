@@ -5,13 +5,13 @@ import { Link, NavLink } from "react-router-dom"
 function LoginPage (){
     return (
     <>
-        <div className='loginMainContainer'>
+        <div className='loginMainContainer overflow-hidden'>
             <div className="loginnavBar">
                 <img src={logo} alt="loginLogo" className="logo"/>
             </div>
 
 
-            <div className="loginContainer">
+            <div className="loginContainer ">
                 <div className='loginContent'>
                     <h1>Log In</h1>
 

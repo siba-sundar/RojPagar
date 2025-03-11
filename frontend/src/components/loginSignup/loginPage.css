@@ -1,9 +1,4 @@
 
-*{
-    padding: 0;
-    margin: 0;
-}
-
 .loginMainContainer{
     height: 100vh;
     width: 100vw;
@@ -36,6 +31,7 @@
     background-position: bottom center;
     background-size: 104vw 72vh;
     background-repeat: no-repeat;
+    
 }
 
 .loginContainer .loginContent{
@@ -48,6 +44,11 @@
     width: 30%;
     border-radius: 25px;
     box-shadow: 1px 9px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    
 }
 
 

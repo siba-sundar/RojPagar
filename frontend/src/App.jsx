@@ -18,14 +18,14 @@ import { generateToken } from './notifications/firebase.js';
 import { onMessage } from 'firebase/messaging';
 function App() {
   const [count, setCount] = useState(0)
-  useEffect(()=>{
-    generateToken();
-    onMessage(Messaging, (payload)=>{
-      console.log('====================================');
-      console.log(payload);
-      console.log('====================================');
-    })
-  },[])
+  // useEffect(()=>{
+  //   generateToken();
+  //   onMessage(Messaging, (payload)=>{
+  //     console.log('====================================');
+  //     console.log(payload);
+  //     console.log('====================================');
+  //   })
+  // },[])
 
   const router = createBrowserRouter([
     {
@@ -47,6 +47,7 @@ function App() {
   return (
     <>
     <RouterProvider router={router} />
+    <div></div>
     </>
   )
 }
