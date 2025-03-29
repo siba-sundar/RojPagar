@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import axios
 import logo from "../assets/logo.svg";
 
 function Signup() {
@@ -159,19 +160,49 @@ function Signup() {
     setIsSubmitting(true);
 
     try {
-      // Here you would normally send the data to your API
-      console.log('Form data submitted:', formData);
+      // Create a FormData object for file upload
+      const formDataToSend = new FormData();
+      formDataToSend.append('fullName', formData.fullName);
+      formDataToSend.append('aadharCard', formData.aadharCard);
+      formDataToSend.append('phoneNumber', formData.phoneNumber);
+      formDataToSend.append('password', formData.password);
+      formDataToSend.append('location', formData.location);
+      formDataToSend.append('userType', formData.userType);
+      
+      // Append each preferred job
+      formData.preferredJobs.forEach((job, index) => {
+        formDataToSend.append(`preferredJobs[${index}]`, job);
+      });
+      
+      // Append the profile picture if exists
+      if (formData.profilePicture) {
+        formDataToSend.append('profilePicture', formData.profilePicture);
+      }
 
-      // Mock API call delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send data to API
+      const response = await axios.post('http://localhost:5000/api/auth/register', formDataToSend, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
 
+      console.log('Registration successful:', response.data);
+      
       // Redirect to login page on success
       navigate('/login');
     } catch (error) {
       console.error('Error submitting form:', error);
-      setErrors({
-        form: 'Failed to create account. Please try again.'
-      });
+      
+      // Handle specific error messages from the backend
+      if (error.response && error.response.data && error.response.data.message) {
+        setErrors({
+          form: error.response.data.message
+        });
+      } else {
+        setErrors({
+          form: 'Failed to create account. Please try again.'
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -183,7 +214,7 @@ function Signup() {
         <img src={logo} alt="Logo" className='logo absolute w-[10vw] top-5 left-2' />
 
         <div className="w-full h-full items-center justify-center">
-          <form onSubmit={handleSubmit} className="bg-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-10 rounded-xl shadow-md overflow-y-auto max-h-[90vh]">
+          <form onSubmit={handleSubmit} className="bg-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-10 rounded-xl shadow-md overflow-y-auto max-h-[90vh] w-[70vw]">
             <h1 className="w-full text-center text-[2vw] uppercase mb-8 font-bold">Create Account</h1>
 
             {errors.form && (
@@ -192,7 +223,7 @@ function Signup() {
               </div>
             )}
 
-            <div className="flex flex-col md:flex-row h-full gap-10 w-[6vw]">
+            <div className="flex flex-col md:flex-row h-full gap-10 w-[6vw] items-center">
               <div className="flex flex-col gap-3 justify-center">
                 <div>
                   <input

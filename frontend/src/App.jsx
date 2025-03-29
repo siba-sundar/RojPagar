@@ -9,12 +9,15 @@ import Contacts from './components/landingPage/landingContact.jsx';
 import LoginPage from "./components/loginSignup/loginPage.jsx";
 import Signup from './components/loginSignup/signup.jsx';
 import ListingHome from './components/listingPage/listingHome.jsx';
-import JobDetails from './components/listingPage/jobDetails.jsx';
+
+
+// worked specific imports 
+import WorkerLayout from "./layouts/WorkerLayout.jsx"
+import JobDetail from "./components/listingPage/jobDetails.jsx"
 
 
 
-// screens & layouts
-import WorkerLayout from './layouts/WorkerLayout.jsx';
+
 
 
 import { createBrowserRouter, generatePath, RouterProvider } from 'react-router-dom'
@@ -49,9 +52,13 @@ function App() {
       element: <WorkerLayout />, 
       children: [
         {index: true, element: <ListingHome/>},
+        {
+          path:"details/:jobId",
+          element:<JobDetail/>
+        }
       ]
     },
-    { path: "jobdetails", element: <JobDetails /> }
+   
   ]);
 
   return (

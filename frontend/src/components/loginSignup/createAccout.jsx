@@ -3,7 +3,7 @@ import React from 'react'
 function createAccount() {
   return (
     <>
-        <div className='createAccount'>
+        <div className='createAccount w-[80vw] color'>
             <h1>Create Account</h1>
             <div className='userDetails'>
                 <div className='input'>

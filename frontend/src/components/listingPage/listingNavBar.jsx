@@ -7,12 +7,12 @@ import bookmark from "../assets/icons/bx-bookmark.svg"
 import jobs from "../assets/icons/bx-briefcase.svg"
 import settings from "../assets/icons/bx-cog.svg"
 import search from "../assets/icons/bx-search.svg"
-import profileImg from "../assets/Ellipse 17.svg"
+import profileImg from "../assets/Ellipse 11.svg"
 
 function NavBar (){
     return (
         <>
-            <div className="listingContainer fixed">
+            <div className="listingContainer fixed z-20">
                 <img src={logo} alt="logo" className="listingLogo"/>
 
                 <div className="listingSearchBar">

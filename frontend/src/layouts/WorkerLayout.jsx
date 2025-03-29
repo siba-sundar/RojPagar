@@ -10,7 +10,9 @@ const WorkerLayout = () => {
   return (
     <>
     <WorkerNavBar/>
+    <div className='pt-10'>
     <Outlet/>
+    </div>
     <DesktopFooter/>
     </>
   )

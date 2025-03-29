@@ -1,4 +1,4 @@
-import "./jobCard.css"
+
 import profileImg from "../assets/profileImage.svg"
 import location from "../assets/icons/bx-loc.svg"
 import card from "../assets/icons/bxs-credit-card.svg"
@@ -21,24 +21,24 @@ function JobCard({ detail }) {
                     </div>
                     <div className="px-5 leading-[100%] mt-5">
                         <h2 className="text-[1.5vw] font-medium">{value.job}</h2>
-                        <p className="text-[1.2vw]" style={{ wordBreak: 'break-word' }}>{value.jobDescription}</p>
+                        <p className="text-[1.1vw] pt-3" style={{ wordBreak: 'break-word' }}>{value.jobDescription}</p>
 
                         <div className="flex justify-between mt-5 mb-5 ">
                             <div className="flex gap-3 w-[40%] flex-wrap">
-                                <div className="infoCardcar">
-                                    <img src={location} alt="" className="icon" />
+                                <div className="flex items-center gap-2 border rounded-full  px-2 py-0">
+                                    <img src={location} alt="" className="w-4 "/>
                                     <p>{value.Location}</p>
                                 </div>
-                                <div className="infoCardcar">
-                                    <img src={card} alt="" className="icon" />
+                                <div className="flex items-center gap-2 border rounded-full  px-2 py-0">
+                                    <img src={card} alt="" className="w-4" />
                                     <p>{value.salary}</p>
                                 </div>
-                                <div className="infoCardcar">
-                                    <img src={time} alt="" className="icon" />
+                                <div className="flex items-center gap-2 border rounded-full  px-2 py-0">
+                                    <img src={time} alt="" className="w-4" />
                                     <p>{value.duration}</p>
                                 </div>
                             </div>
-                            <Link to="/jobdetails"  className="bg-black text-center text-white content-center px-5 py-2 h-10 rounded-full">Apply Now</Link>
+                            <Link to="/worker-home/details/:jobId"  className="bg-black text-center text-white content-center px-5 py-2 h-10 rounded-full">Apply Now</Link>
 
                         </div>
                     </div>

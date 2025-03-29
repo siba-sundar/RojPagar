@@ -32,22 +32,47 @@ const generateRefreshToken = (user) => {
  */
 export const registerUser = async (req, res) => {
     try {
-        const { username, fullName, password } = req.body;
+        const { 
+            fullName, 
+            aadharCard, 
+            phoneNumber, 
+            password, 
+            location, 
+            userType, 
+            preferredJobs 
+        } = req.body;
 
-        // Check if user already exists
-        const existingUser = await User.findOne({ username });
-        if (existingUser) return res.status(400).json({ message: "User already exists" });
+        // Check if user already exists (using phone number as username)
+        const existingUser = await User.findOne({ phoneNumber });
+        if (existingUser) return res.status(400).json({ message: "User with this phone number already exists" });
+
+        // Handle profile picture if it exists
+        let profilePicturePath = null;
+        if (req.file) {
+            profilePicturePath = req.file.path; // Assuming you'll use multer for file uploads
+        }
 
         // Create new user
-        const user = new User({ username, fullName, password });
+        const user = new User({ 
+            fullName, 
+            aadharCard, 
+            phoneNumber, 
+            password, 
+            location, 
+            userType, 
+            preferredJobs,
+            profilePicture: profilePicturePath
+        });
+        
         await user.save();
 
         res.status(201).json({ message: "User registered successfully" });
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.log(error)
+        res.status(500).json({ message: "registration error", error: error.message });
+
     }
 };
-
 /**
  * @desc Login user and return tokens
  * @route POST /api/auth/login

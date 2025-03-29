@@ -1,22 +1,15 @@
 import React from 'react'
-import "./listingHome.css"
 import ListingNavBar from "./listingNavBar.jsx"
 import JobCard from "./jobCard.jsx"
 import ProfileCard from "./profileCard.jsx"
-import img1 from "../assets/Ellipse 10.svg"
-import img2 from "../assets/Ellipse 11.svg"
-import img3 from "../assets/Ellipse 12.svg"
-import img4 from "../assets/Ellipse 14.svg"
-import img5 from "../assets/Ellipse 15.svg"
-import img6 from "../assets/Ellipse 16.svg"
-import img8 from "../assets/Ellipse 18.svg"
-import img9 from "../assets/Ellipse 19.png"
+import img1 from "../assets/Ellipse 11.svg"
+
 
 function ListingHome() {
   const details = [
     {
       'username': "Ram",
-      'img': img8,
+      'img': img1,
       'address': "Panchkula",
       'district': "Panchkula",
       'job': "Painter",
@@ -27,7 +20,7 @@ function ListingHome() {
     },
     {
       'username': "Mohan",
-      'img': img9,
+      'img': img1,
       'address': "Vijaywada",
       'district': "Vijaywada",
       'job': "Labour",
@@ -38,7 +31,7 @@ function ListingHome() {
     },
     {
       'username': "Shayam",
-      'img': img3,
+      'img': img1,
       'address': "Jind",
       'district': "Jind",
       'job': "Plumber",
@@ -49,7 +42,7 @@ function ListingHome() {
     },
     {
       'username': "Shivam",
-      'img': img4,
+      'img': img1,
       'address': "Uchana",
       'district': "Jind",
       'job': "Carpenter",
@@ -69,21 +62,21 @@ function ListingHome() {
       "description": "Talented carpenter skilled in designing and building custom wooden cabinets and storage solutions."
     },
     {
-      "img": img2,
+      "img": img1,
       "username": "vishali_singh19",
       "userarea": "Kolkata East",
       "userdistrict": "Salt Lake City",
       "description": "Proficient carpenter specializing in intricate wood carving and joinery. "
     },
     {
-      "img": img5,
+      "img": img1,
       "username": "nehal_patil05",
       "userarea": "Bengaluru North",
       "userdistrict": "Hebbal",
       "description": "Skilled carpenter adept at creating modern and minimalist furniture designs. "
     },
     {
-      "img": img6,
+      "img": img1,
       "username": "sandeep_sharma72",
       "userarea": "Mumbai Central",
       "userdistrict": "Dadar",
@@ -93,25 +86,32 @@ function ListingHome() {
 
   return (
     <>
-      <div className='pt-10'>
-        <div className="exploreJobsList">
+      <div className='pt-10 bg-['>
+        <div className="flex flex-col gap-8 pl-[5vw] pt-[3vh] pb-[5vh] ">
           <h3 className='font-semibold'>Explore jobs</h3>
-          <div className="flex gap-10 ">
-            <div className="listingJobName"><a href="#">Painter</a></div>
-            <div className="listingJobName"><a href="#">Plumber</a></div>
-            <div className="listingJobName"><a href="#">Labour</a></div>
-            <div className="listingJobName"><a href="#">Carpenter</a></div>
+          <div className="flex gap-10">
+            <div className="border border-black py-[0.6vw] px-[6vh] rounded-[30px] transition duration-300 delay-200 hover:shadow-lg hover:cursor-pointer">
+              <a href="#" className="no-underline text-black font-semibold">Painter</a>
+            </div>
+            <div className="border border-black py-[0.6vw] px-[6vh] rounded-[30px] transition duration-300 delay-200 hover:shadow-lg hover:cursor-pointer">
+              <a href="#" className="no-underline text-black font-semibold">Plumber</a>
+            </div>
+            <div className="border border-black py-[0.6vw] px-[6vh] rounded-[30px] transition duration-300 delay-200 hover:shadow-lg hover:cursor-pointer">
+              <a href="#" className="no-underline text-black font-semibold">Labour</a>
+            </div>
+            <div className="border border-black py-[0.6vw] px-[6vh] rounded-[30px] transition duration-300 delay-200 hover:shadow-lg hover:cursor-pointer">
+              <a href="#" className="no-underline text-black font-semibold">Carpenter</a>
+            </div>
           </div>
         </div>
-        <div className="listingRecommendations">
-
-          <div className="pl-14 pr-5">
+        <div className="flex  ">
+          <div className="pl-14 pr-5 flex-3">
             <h2 className='font-semibold'>Job Recommendations</h2>
             <JobCard detail={details} />
           </div>
-          <div className="profileRecommendContainer">
-            <h2 className='heading'>Profile Recommendations</h2>
-            <div className="profileRecomendations">
+          <div className="flex flex-2 flex-col items-center  flex-wrap w-[50vw]   border-l border-black">
+            <h2 className='pl-8 w-full font-semibold'>Profile Recommendations</h2>
+            <div className="flex flex-wrap ">
               <ProfileCard details={Details} />
             </div>
           </div>
